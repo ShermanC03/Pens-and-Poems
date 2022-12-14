@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NewScenes">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1932.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/Bja8kze.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="1096.0" fitWidth="1967.0" layoutX="-2.0" layoutY="-6.0">
+         <image>
+            <Image url="@../../../../Desktop/Club.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="1023.0" fitWidth="1028.0" layoutX="985.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/yrui1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="1145.0" fitWidth="1097.0" layoutX="440.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/Nat1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="1108.0" fitWidth="1055.0" layoutX="-101.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/sayo-rest.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa3f3" height="167.0" layoutX="440.0" layoutY="904.0" opacity="0.9" stroke="BLACK" strokeType="INSIDE" width="1150.0">
+         <effect>
+            <BoxBlur />
+         </effect>
+      </Rectangle>
+      <Label layoutX="452.0" layoutY="848.0" prefHeight="232.0" prefWidth="1885.0" text="Hello everyone." wrapText="true">
+         <font>
+            <Font size="33.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <Lighting diffuseConstant="0.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Button layoutX="888.0" layoutY="1027.0" mnemonicParsing="false" onAction="#switchToScene1" prefHeight="46.0" prefWidth="164.0" style="-fx-background-color: ffaf3f3;" text="Main Menu ">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc0f2" height="71.0" layoutX="443.0" layoutY="833.0" stroke="BLACK" strokeType="INSIDE" style="-fx-smooth: 900;" width="237.0">
+         <effect>
+            <Blend />
+         </effect>
+      </Rectangle>
+      <Button layoutX="-14.0" layoutY="-14.0" mnemonicParsing="false" onAction="#switchToScene12" opacity="0.0" prefHeight="1087.0" prefWidth="1948.0" text="work?" />
+      <Label layoutX="452.0" layoutY="837.0" prefHeight="64.0" prefWidth="1885.0" text="Yuri and Natsuki" textAlignment="CENTER" textFill="#004eff" wrapText="true">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <Lighting diffuseConstant="0.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

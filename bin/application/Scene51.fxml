@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NewScenes">
+   <children>
+      <ImageView fitHeight="1087.0" fitWidth="1931.0" layoutX="-9.0" layoutY="-3.0">
+         <image>
+            <Image url="@../../../../Desktop/Club.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="1118.0" fitWidth="1194.0" layoutX="-330.0" layoutY="-38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/monipoint.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="1108.0" fitWidth="1118.0" layoutX="118.0" layoutY="-26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/yrui1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="1118.0" fitWidth="1194.0" layoutX="1108.0" layoutY="-33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/sayo-rest.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="1134.0" fitWidth="1118.0" layoutX="616.0" layoutY="-38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/Nat1.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa3f3" height="167.0" layoutX="484.0" layoutY="900.0" opacity="0.9" stroke="BLACK" strokeType="INSIDE" width="1150.0">
+         <effect>
+            <BoxBlur />
+         </effect>
+      </Rectangle>
+      <Button layoutX="957.0" layoutY="1020.0" mnemonicParsing="false" onAction="#switchToScene1" prefHeight="46.0" prefWidth="164.0" style="-fx-background-color: ffaf3f3;" text="Main Menu ">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc0f2" height="71.0" layoutX="484.0" layoutY="830.0" stroke="BLACK" strokeType="INSIDE" style="-fx-smooth: 900;" width="237.0">
+         <effect>
+            <Blend />
+         </effect>
+      </Rectangle>
+      <Label layoutX="491.0" layoutY="834.0" prefHeight="64.0" prefWidth="1885.0" text="Monika" textAlignment="CENTER" textFill="#004eff" wrapText="true">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <Lighting diffuseConstant="0.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <Button layoutX="-4.0" layoutY="-2.0" mnemonicParsing="false" onAction="#switchToScene52" opacity="0.0" prefHeight="1087.0" prefWidth="1948.0" text="work?" />
+      <Label layoutX="491.0" layoutY="900.0" prefHeight="117.0" prefWidth="1150.0" text="Well that's all I had planned for today, unless you guys have anything else you're free to go!" wrapText="true">
+         <font>
+            <Font size="33.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <Lighting diffuseConstant="0.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>
